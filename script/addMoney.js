@@ -29,11 +29,27 @@ return;
         alert("Please enter valid Pin");
         return;
        
-    }  alert(`Add money successfully from
+    }  alert( `Add money successfully from
           ${bankAccount}
           at ${new Date()}`)
 
 const currentBalance = getBalance()
     const newBalance = currentBalance + Number(amount);
         setBalance (newBalance)
+
+
+/// Get history-container
+ const history = document.getElementById("history-container")
+
+     // Create a new div
+     const newHistory = document.createElement("div")
+     // add innerHTML to new div
+     newHistory.innerHTML =  `  <div class="py-5 transaction-card bg-base-100">
+     
+         Add money successfully from ${bankAccount},  accountNumber ${accountNumber}
+          at ${new Date()}
+                </div>
+     `;
+     // new drive append to history container
+     history.append(newHistory);
 });
