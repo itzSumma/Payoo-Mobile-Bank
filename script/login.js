@@ -16,7 +16,7 @@ if(contactNumber == "01746965351" && pin == "2525")
     alert("Login Successful");
 
     // window.location.replace("/home.html");
-    window.location.assign("/home.html");
+    window.location.assign("home.html");
    
     }
      else{
